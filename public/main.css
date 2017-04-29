@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /*font-family: 'Alegreya Sans SC', sans-serif;*/
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+}
+
+main {
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+	main {
+    padding-left: 10%;
+    padding-right: 10%;
+		padding-top: 100px;
+	}
+  nav {
+    padding: 1% 15%;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+	main {
+    padding-left: 0;
+    padding-right: 0;
+		padding-top: 100px;
+	}
+  nav {
+    padding: 1% 0;
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  padding: 1% 25%;
+  background-color: turquoise;
+}
+
+nav li {
+	display: inline;
+	list-style-type: none;
+}
+
+section {
+  padding: 20px 0;
+  background-color: gray;
+}
+
+section:nth-child(even) {
+  background-color: white;
+}
+
+header {
+  background-color: lightgreen;
+  padding: 1px 0;
+}
+
+.header-summary {
+  float: left;
+  padding-right: 10px;
+}
