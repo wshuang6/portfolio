@@ -2,42 +2,31 @@
   box-sizing: border-box;
 }
 
-body {
-  /*font-family: 'Alegreya Sans SC', sans-serif;*/
-  font-family: 'Nunito', sans-serif;
-  font-size: 16px;
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: #81ceff;
 }
 
 main {
-  padding-left: 15%;
-  padding-right: 15%;
-  padding-top: 100px;
-}
-
-@media only screen and (max-width: 768px) {
-	main {
-    padding-left: 10%;
-    padding-right: 10%;
-		padding-top: 100px;
-	}
-  nav {
-    padding: 1% 15%;
-  }
-}
-
-@media only screen and (max-width: 376px) {
-	main {
-    padding-left: 0;
-    padding-right: 0;
-		padding-top: 100px;
-	}
-  nav {
-    padding: 1% 0;
-  }
+  /*font-family: 'Alegreya Sans SC', sans-serif;*/
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
 }
 
 nav {
+  color: white;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   width: 100%;
   position: fixed;
@@ -46,7 +35,34 @@ nav {
   right: 0;
   z-index: 10;
   padding: 1% 25%;
-  background-color: turquoise;
+  background-color: #00598e;
+}
+
+header {
+  background-color: #0077c0;
+  padding: 40px 15% 0;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+h2 {
+  text-align: center;
+}
+
+.left {
+  width: 40%;
+}
+
+.right {
+  width: 40%;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
 }
 
 nav li {
@@ -54,21 +70,79 @@ nav li {
 	list-style-type: none;
 }
 
+.contact-links {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 0;
+}
+
 section {
-  padding: 20px 0;
-  background-color: gray;
+  padding: 0 15%;
+  background-color: #81ceff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.project-header {
+  margin: 0;
+  padding-top: 10px;
+  font-size: 20pt;
+}
+
+.project-info {
+  margin: 0;
+  padding: 0;
 }
 
 section:nth-child(even) {
   background-color: white;
 }
 
-header {
-  background-color: lightgreen;
-  padding: 1px 0;
+.header-top-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .header-summary {
-  float: left;
-  padding-right: 10px;
+  text-align: center;
+}
+
+.header-info, .header-summary {
+  padding: 0 30px;
+}
+
+@media only screen and (max-width: 768px) {
+	header {
+    padding: 40px 7% 0;
+  }
+  section {
+    padding: 0 7%;
+	}
+  nav {
+    padding: 1% 15%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .left, .right, .header-info, .header-summary {
+    width: 100%;
+    text-align: center;
+  }
+  .header-top-container {
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 376px) {
+	header {
+    padding: 40px 0 0;
+  }
+  section {
+    padding: 0;
+	}
+  nav {
+    padding: 1% 0;
+  }
 }
