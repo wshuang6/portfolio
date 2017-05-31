@@ -79,7 +79,7 @@ nav li {
 
 section {
   padding: 0 15%;
-  background-color: #81ceff;
+  /*background-color: #81ceff;*/
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
