@@ -3,10 +3,6 @@
   font-weight: 300;
 }
 
-body {
-  max-width: 1600px;
-}
-
 a {
   text-decoration: none;
   color: inherit;
@@ -22,30 +18,19 @@ a:hover {
 }
 
 main {
-  /*font-family: 'Alegreya Sans SC', sans-serif;*/
   font-family: 'Oswald', sans-serif;
   font-size: 18px;
   font-weight: 300;
-  padding-bottom: 150px;
+  padding-bottom: 50px;
+  background-image: url('https://www.transparenttextures.com/patterns/project-paper.png');
+  background-color: #ffffff;
 }
 
-.lightweight {
-
-}
-
-nav {
-  color: white;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
-  padding: 1% 25%;
-  background-color: #00598e;
+.self {
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+  border: none;
 }
 
 header {
@@ -56,6 +41,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  background-image: url('https://www.transparenttextures.com/patterns/axiom-pattern.png')
 }
 
 h2 {
@@ -133,9 +119,10 @@ section {
 }
 
 header, section {
-  padding-left: 15%;
-  padding-right: 15%;
+  padding-left: 12%;
+  padding-right: 12%;
 }
+
 .project-header {
   margin: 0;
   padding: 10px 0;
@@ -148,9 +135,9 @@ header, section {
   padding: 0;
 }
 
-section:nth-child(even) {
+/*section:nth-child(even) {
   background-color: white;
-}
+}*/
 
 .header-top-container {
   width: 100%;
@@ -160,14 +147,9 @@ section:nth-child(even) {
 
 
 @media only screen and (max-width: 768px) {
-	header {
-    padding: 40px 7% 0;
-  }
-  section {
-    padding: 0 7%;
-	}
-  nav {
-    padding: 1% 15%;
+  header, section {
+    padding-left: 7%;
+    padding-right: 7%;
   }
 }
 
@@ -187,13 +169,10 @@ section:nth-child(even) {
   }
 }
 @media only screen and (max-width: 376px) {
-	header {
-    padding: 40px 0 0;
-  }
-  section {
-    padding: 0 3%;
-	}
-  nav {
-    padding: 1% 0;
+  header, section {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 }
