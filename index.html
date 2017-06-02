@@ -5,7 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="./main.css">
-  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:300,400" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="William Huang's coding portfolio">
   
@@ -22,13 +22,9 @@
 	<main role="main">
     <header role="banner">
       <div class="header-top-container">
-        <div class="header-summary">
-          <img>
-          <p>William Huang <br>Washington, DC <br></p>
-        </div>
-        <div class="header-info">
-          <p>Full-stack web developer/looking for full time</br> Policy/international relations background from Carnegie Mellon University</br>JavaScript, HTML, CSS</br> React/Redux, Node/Express, Mongoose/MongoDB, Knex/PostgreSQL, D3, jQuery, Passport</br> Rabid Boston sports fan</p>
-        </div>
+        <img>
+        <h2 class="less-margin">William Huang</h2>
+        <p class="less-margin">Washington, DC <br>Full-stack web developer</br> Policy and international relations background from Carnegie Mellon University</br> Rabid Boston sports fan</br>wshuang617@gmail.com</p>
       </div>
       <div class="contact-links">
         <a href="" target="_blank"><i class="fa fa-file-pdf-o" style="font-size:30px"></i></a>
@@ -39,51 +35,51 @@
     </header>
     <h2>Projects</h2>
     <section>
-      <div class="left">
-        <p class="project-header">Oui Verb 
-          <a href="https://ouiverb.herokuapp.com/" target="_blank"><i class="fa fa-user-circle"></i></a>
-          <a href="https://github.com/wshuang6/french-verbs-app" target="_blank"><i class="fa fa-github-square" style="font-size:30px"></i></a>
-        </p>
-        <p class="project-info"></br>React | Redux | Node | Express | Mongoose | MongoDB | Passport | Google OAuth 2.0</br>Description</br></p>
+      <div class="project-content project-text">
+        <p class="project-header lightweight">Oui Verb</p>
+        <a href="https://ouiverb.herokuapp.com/" target="_blank"><button type="submit" value="Go to app">Live</button></a>
+        <a action="https://github.com/wshuang6/french-verbs-app" target="_blank"><button type="submit" value="Go to Github">Code</button></a>
+        <p class="project-info">React · Redux · Node · Express · Mongoose · MongoDB · Passport · Google OAuth 2.0</p>
+        <p class="project-info">This app uses a spaced repetition algorithm to test students of French on verb conjugation and translation. Users can choose between six categories and four verb groups and are more likely to be tested on the verbs that they struggle with.</p>
       </div>
-      <div class="right">
-        <a href="https://ouiverb.herokuapp.com/" target="_blank"><img src="./images/oui-verb.png" alt="Oui Verb app image"></a>
-      </div>
-    </section>
-    <section>
-      <div class="left">
-        <a href="https://thawing-earth-99346.herokuapp.com/" target="_blank"><img src="https://raw.githubusercontent.com/wshuang6/french-verbs-app/master/client/images/dash.png" alt="Oui Verb app image"></a>
-      </div>
-      <div class="right">
-        <p class="project-header">Postmarks 
-          <a href="https://thawing-earth-99346.herokuapp.com/" target="_blank"><i class="fa fa-user-circle"></i></a>
-          <a href="https://github.com/wshuang6/bookmark-app" target="_blank"><i class="fa fa-github-square" style="font-size:30px"></i></a>
-        </p>
-        <p class="project-info"></br>React | Redux | Node | Express | Knex | PostgreSQL | Passport | Basic Auth</br>Description</br></p>
+      <div class="project-content project-image">
+        <a href="https://ouiverb.herokuapp.com/" target="_blank" class="img-parent"><img src="./images/oui-verb.png" alt="Oui Verb app image"></a>
       </div>
     </section>
     <section>
-      <div class="left">
-        <p class="project-header">Visualizing the NBA 
-          <a href="https://wshuang6.github.io/d3-nba-visualization/" target="_blank"><i class="fa fa-user-circle"></i></a>
-          <a href="https://github.com/wshuang6/d3-nba-visualization" target="_blank"><i class="fa fa-github-square" style="font-size:30px"></i></a>
-        </p>
-        <p class="project-info"></br>D3</br>Description</br></p>
+      <div class="project-content project-image">
+        <a href="https://thawing-earth-99346.herokuapp.com/" target="_blank" class="img-parent"><img src="https://raw.githubusercontent.com/wshuang6/french-verbs-app/master/client/images/dash.png" alt="Oui Verb app image"></a>
       </div>
-      <div class="right">
+      <div class="project-content project-text">
+        <p class="project-header lightweight">Postmarks</p>
+        <a href="https://thawing-earth-99346.herokuapp.com/" target="_blank"><button type="submit" value="Go to app">Live</button></a>
+        <a href="https://github.com/wshuang6/bookmark-app" target="_blank"><button type="submit" value="Go to Github">Code</button></a>
+        <p class="project-info">React · Redux · Node · Express · Knex · PostgreSQL · Passport · Basic Auth</p>
+        <p class="project-info">This app allows users to save bookmarks, organize them within folders, attach notes to them, and search through their entire collection of bookmarks. </p>
+      </div>
+    </section>
+    <section>
+      <div class="project-content project-text">
+        <p class="project-header">Visualizing the NBA</p>
+        <a href="https://wshuang6.github.io/d3-nba-visualization/" target="_blank"><button type="submit" value="Go to app">Live</button></a>
+        <a href="https://github.com/wshuang6/d3-nba-visualization" target="_blank"><button type="submit" value="Go to Github">Code</button></a>
+        <p class="project-info">D3</p>
+        <p class="project-info">This project uses data from Basketball-Reference to visualize three-point shooting, player scoring/assisting, and team shot locations for the 2016-17 season.</p>
+      </div>
+      <div class="project-content project-image">
         <a href="https://wshuang6.github.io/d3-nba-visualization/" target="_blank"><img src="./images/nba-viz.png" alt="Oui Verb app image"></a>
       </div>
     </section>
     <section>
-      <div class="right">
+      <div class="project-content project-image">
         <a href="https://ouiverb.herokuapp.com/" target="_blank"><img src="https://raw.githubusercontent.com/wshuang6/french-verbs-app/master/client/images/dash.png" alt="Oui Verb app image"></a>
       </div>
-      <div class="left">
-        <p class="project-header">Oui Verb 
-          <a href="https://ouiverb.herokuapp.com/" target="_blank"><i class="fa fa-user-circle"></i></a>
-          <a href="https://github.com/wshuang6/french-verbs-app" target="_blank"><i class="fa fa-github-square" style="font-size:30px"></i></a>
-        </p>
-        <p class="project-info"></br>React | Redux | Node | Express | Mongoose | MongoDB | Passport | Google OAuth 2.0</br>Description</br></p>
+      <div class="project-content project-text">
+        <p class="project-header">Oui Verb</p>
+        <a href="https://ouiverb.herokuapp.com/" target="_blank"><button type="submit" value="Go to app">Live</button></i></a>
+        <a href="https://github.com/wshuang6/french-verbs-app" target="_blank"><button type="submit" value="Go to Github">Code</button></a>
+        <p class="project-info">React · Redux · Node · Express · Knex · PostgreSQL · Passport · Basic Auth</p>
+        <p class="project-info">Oui Verb uses a spaced repetition algorithm to test students of French on verb conjugation and translation. Users can choose between six categories and four verb groups and are more likely to be tested on the verbs that they struggle with.</p>
       </div>
     </section>
 	</main>

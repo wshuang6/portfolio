@@ -1,5 +1,10 @@
 * {
   box-sizing: border-box;
+  font-weight: 300;
+}
+
+body {
+  max-width: 1600px;
 }
 
 a {
@@ -21,6 +26,11 @@ main {
   font-family: 'Oswald', sans-serif;
   font-size: 18px;
   font-weight: 300;
+  padding-bottom: 150px;
+}
+
+.lightweight {
+
 }
 
 nav {
@@ -39,8 +49,9 @@ nav {
 }
 
 header {
-  background-color: #0077c0;
-  padding: 40px 15% 0;
+  /*background-color: #0077c0;*/
+  background-color: #336699;
+  padding-top: 40px;
   color: white;
   display: flex;
   flex-wrap: wrap;
@@ -49,20 +60,50 @@ header {
 
 h2 {
   text-align: center;
+  font-weight: 300;
 }
 
-.left {
+.project-content {
   width: 40%;
 }
 
-.right {
-  width: 40%;
+.less-margin {
+  margin: 5px;
+}
+
+.img-parent {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+button {
+  display: inline-block;
+  background: none;
+  border-radius: 8px;
+  box-shadow: none;
+  text-shadow: none;
+  border-style: solid;
+  border: 1px solid gray;
+  padding: 2px 12px;
+}
+
+button:hover {
+  background-color: #81ceff;
+  cursor: pointer;
+  cursor: hand;
+}
+
+form {
+  display: inline-block;
 }
 
 img {
   max-width: 100%;
   max-height: 100%;
-  margin: auto;
+  margin: auto auto;
+  border: 2px solid lightgray;
+  border-radius: 5px;
 }
 
 nav li {
@@ -73,26 +114,37 @@ nav li {
 .contact-links {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   padding: 30px 0;
 }
 
+.contact-links > * {
+  padding: 0 1em;
+}
+
 section {
-  padding: 0 15%;
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
   /*background-color: #81ceff;*/
   display: flex;
+  border-top: lightgray 1px solid;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
+header, section {
+  padding-left: 15%;
+  padding-right: 15%;
+}
 .project-header {
   margin: 0;
-  padding-top: 10px;
+  padding: 10px 0;
   font-size: 20pt;
+  vertical-align: text-bottom;
 }
 
 .project-info {
-  margin: 0;
+  margin: 10px 0;
   padding: 0;
 }
 
@@ -102,17 +154,10 @@ section:nth-child(even) {
 
 .header-top-container {
   width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.header-summary {
   text-align: center;
 }
 
-.header-info, .header-summary {
-  padding: 0 30px;
-}
+
 
 @media only screen and (max-width: 768px) {
 	header {
@@ -127,12 +172,18 @@ section:nth-child(even) {
 }
 
 @media only screen and (max-width: 600px) {
-  .left, .right, .header-info, .header-summary {
+  .project-content, .header-info, .header-summary {
     width: 100%;
     text-align: center;
   }
   .header-top-container {
     flex-wrap: wrap;
+  }
+  .project-text {
+    order: 1;
+  }
+  .project-image {
+    order: 2;
   }
 }
 @media only screen and (max-width: 376px) {
@@ -140,7 +191,7 @@ section:nth-child(even) {
     padding: 40px 0 0;
   }
   section {
-    padding: 0;
+    padding: 0 3%;
 	}
   nav {
     padding: 1% 0;
