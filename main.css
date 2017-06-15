@@ -25,6 +25,17 @@ main {
   background-color: #ffffff;
 }
 
+small {
+  padding-top: 30px;
+  display: block;
+  text-align: center;
+}
+
+center {
+  text-align: center;
+  margin: auto;
+}
+
 .self {
   height: 200px;
   width: 200px;
@@ -115,6 +126,7 @@ section {
   /*background-color: #81ceff;*/
   display: flex;
   border-top: lightgray 1px solid;
+  border-bottom: lightgray 1px solid;
   flex-wrap: wrap;
   justify-content: space-around;
 }
