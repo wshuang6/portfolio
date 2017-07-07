@@ -26,18 +26,13 @@
   <meta name="theme-color" content="#ffffff">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="William Huang's coding portfolio">
+  <meta property="og:title" content="William Huang's Portfolio">
+  <meta property="og:url" content="https://WilliamSHuang.com">
+  <meta property="og:image" content="./flixzon.png">
 
 </head>
 
 <body>
-  <!--<nav role="navigation">
-    <li><a href="">About</a></li>
-    <li><a href="">Project 1</a></li>
-    <li><a href="">Project 2</a></li>
-    <li><a href="">Project 3</a></li>
-    <li><a href="">Contact???</a></li>
-	</nav>-->
-
   <main role="main">
     <header role="banner">
       <div class="header-top-container">
@@ -49,19 +44,19 @@
         <a href="./pdf/Wshuang Resume.pdf" target="_blank" title="Resume"><i class="fa fa-file-pdf-o" style="font-size:30px"></i></a>
         <a href="mailto:wshuang617@gmail.com" title="Email me" target="_blank"><i class="fa fa-envelope-open" style="font-size:30px"></i></a>
         <a href="https://github.com/wshuang6" target="_blank" title="Github"><i class="fa fa-github-square" style="font-size:30px"></i></a>
-        <!--<a href="https://www.linkedin.com/in/william-huang-b4388454/" target="_blank" title="LinkedIn"><i class="fa fa-linkedin-square" style="font-size:30px"></i></a>-->
+        <a href="https://www.linkedin.com/in/wshuang/" target="_blank" title="LinkedIn"><i class="fa fa-linkedin-square" style="font-size:30px"></i></a>
       </div>
     </header>
-    <!--<h2>About Me</h2>-->
-    <section>
+    <h2>About</h2>
+    <section class="border-top">
       <div class="project-content project-text">
-        <p class="project-header center">About Me</p>
+        <h3 class="project-header center">Me</h3>
         <p class="project-info">Policy and international relations background from Carnegie Mellon University</p>
         <p>Translating business logic into JavaScript logic</p>
         <p>Rabid Boston sports fan, perpetually behind on the latest shows, supporter of the Oxford comma</p>
       </div>
       <div class="project-content project-text">
-        <p class="project-header center">Skills</p>
+        <h3 class="project-header center">Skills</h3>
         <p class="project-info">Languages: JavaScript · HTML · CSS</p>
         <p class="project-info">Front-End Frameworks/Libraries: React · Redux · jQuery · D3 · Web Audio API · Enzyme</p>
         <p class="project-info">Back-End Frameworks/Libraries: Node · Express · Mongoose · MongoDB · Knex · PostgreSQL · Passport · Socket.IO · Mocha
@@ -74,11 +69,11 @@
         <a href="https://symphesis.herokuapp.com/" target="_blank" class="img-parent"><img src="./images/symphesis.png" alt="Symphesis app image"></a>
       </div>
       <div class="project-content project-text">
-        <p class="project-header">Symphesis</p>
+        <h3 class="project-header">Symphesis</h3>
+        <p class="project-info gray">React · Redux · Node · Express · Web Audio API · Socket.IO · Multer · Mongoose · MongoDB · Passport · Google OAuth
+          2.0</p>
         <a href="https://symphesis.herokuapp.com/" target="_blank" title="Go to app"><button type="submit">Live</button></a>
         <a href="https://github.com/orcasynth/symphesis" target="_blank" title="Go to Github"><button type="submit">Code</button></a>
-        <p class="project-info">React · Redux · Node · Express · Web Audio API · Socket.IO · Multer · Mongoose · MongoDB · Passport · Google OAuth
-          2.0</p>
         <p class="project-info">This app enables users to join rooms with other users, record a few measures of music, and add recordings to the
           room's composition. It uses custom Redux middleware to handle the interfacing between React/Redux and Socket.IO/Web
           Audio API.</p>
@@ -86,10 +81,10 @@
     </section>
     <section>
       <div class="project-content project-text">
-        <p class="project-header">Oui Verb</p>
+        <h3 class="project-header">Oui Verb</h3>
+        <p class="project-info gray">React · Redux · Node · Express · Mongoose · MongoDB · Passport · Google OAuth 2.0</p>
         <a href="https://ouiverb.herokuapp.com/" target="_blank" title="Go to app"><button type="submit">Live</button></a>
         <a href="https://github.com/wshuang6/french-verbs-app" target="_blank" title="Go to Github"><button type="submit">Code</button></a>
-        <p class="project-info">React · Redux · Node · Express · Mongoose · MongoDB · Passport · Google OAuth 2.0</p>
         <p class="project-info">This app uses a spaced repetition algorithm to test students of French on verb conjugation and translation. Users
           can choose between six categories and four verb groups and are more likely to be tested on the verbs that they
           struggle with.</p>
@@ -103,20 +98,20 @@
         <a href="https://thawing-earth-99346.herokuapp.com/" target="_blank" class="img-parent"><img src="./images/postmarks.png" alt="Postmarks app image"></a>
       </div>
       <div class="project-content project-text">
-        <p class="project-header">Postmarks</p>
+        <h3 class="project-header">Postmarks</h3>
+        <p class="project-info gray">React · Redux · Node · Express · Knex · PostgreSQL · Passport · Basic Auth</p>
         <a href="https://thawing-earth-99346.herokuapp.com/" target="_blank" title="Go to app"><button type="submit">Live</button></a>
         <a href="https://github.com/wshuang6/bookmark-app" target="_blank" title="Go to Github"><button type="submit">Code</button></a>
-        <p class="project-info">React · Redux · Node · Express · Knex · PostgreSQL · Passport · Basic Auth</p>
         <p class="project-info">This app allows users to save bookmarks, organize them within folders, attach notes to them, and search through their
           entire collection of bookmarks. </p>
       </div>
     </section>
     <section>
       <div class="project-content project-text">
-        <p class="project-header">Visualizing the NBA</p>
+        <h3 class="project-header">Visualizing the NBA</h3>
+        <p class="project-info gray">D3</p>
         <a href="https://wshuang6.github.io/d3-nba-visualization/" target="_blank" title="Go to app"><button type="submit">Live</button></a>
         <a href="https://github.com/wshuang6/d3-nba-visualization" target="_blank" title="Go to Github"><button type="submit">Code</button></a>
-        <p class="project-info">D3</p>
         <p class="project-info">This project uses data from Basketball-Reference to visualize three-point shooting, player scoring/assisting, and
           team shot locations for the 2016-17 season.</p>
       </div>
@@ -133,12 +128,12 @@
         </a>
       </div>
       <div class="project-content project-text">
-        <p class="project-header">FlixZon</p>
+        <h3 class="project-header">FlixZon</h3>
+        <p class="project-info gray">React · Redux · Guidebox API</p>
         <a href="https://flixzon.herokuapp.com/" target="_blank" title="Go to app"><button type="submit">Live</button></a>
         <a href="https://github.com/wshuang6/flixzon" target="_blank" title="Go to Github"><button type="submit">Code</button></a>
-        <p class="project-info">React · Redux · Guidebox API</p>
         <p class="project-info">This app uses the Guidebox API to allow users to search shows and check whether they are available on Netflix, Amazon,
-          Hulu, and other video providers. NOTE: Live version may not work properly as Guidebox is restricting and eventually phasing out their free API.</p>
+          Hulu, and other video providers. Note: Live version may not work properly as Guidebox is restricting and eventually phasing out their free API.</p>
       </div>
     </section>
     <small>

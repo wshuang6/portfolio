@@ -57,7 +57,16 @@ header {
 
 h2 {
   text-align: center;
-  font-weight: 300;
+}
+
+h2, h3 {
+  font-weight: 400;
+  padding: 0;
+}
+
+.gray {
+  color: #a0a0a0;
+  font-size: 16px;
 }
 
 .project-content {
@@ -66,6 +75,7 @@ h2 {
 
 .less-margin {
   margin: 5px;
+  font-weight: 300;
 }
 
 .img-parent {
@@ -141,7 +151,7 @@ header, section {
 
 .project-header {
   margin: 0;
-  padding: 10px 0;
+  padding-top: 10px;
   font-size: 20pt;
   vertical-align: text-bottom;
 }
