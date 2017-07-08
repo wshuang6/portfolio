@@ -46,7 +46,7 @@ var demo = Sketch.create({
   retina: 'auto',
   fullscreen: false,
   width: width,
-  height: height
+  height: height+34
 });
 demo.spawn = function (x, y) {
   var particle, theta, force;

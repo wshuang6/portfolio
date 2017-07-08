@@ -133,8 +133,15 @@ nav li {
 	list-style-type: none;
 }
 
+.contact-links-container {
+  position: relative;
+  width: 252px;
+  height: 91px;
+  margin: auto;
+}
+
 .contact-links {
-  /*width: 100%;*/
+  position: absolute;
   display: flex;
   justify-content: center;
   padding: 30px 0;
