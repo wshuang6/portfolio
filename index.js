@@ -77,7 +77,7 @@ demo.draw = function () {
     particles[i].draw(demo);
   }
 };
-demo.touchmove = function () {
+demo.mousemove = function () {
   var particle, theta, force, touch, max, i, j, n;
   for (i = 0, n = demo.touches.length; i < n; i++) {
     touch = demo.touches[i], max = random(2, 3);
