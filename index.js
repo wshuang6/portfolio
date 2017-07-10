@@ -22,7 +22,7 @@ Particle.prototype = {
     this.theta += random(-0.1, 0.1);
     this.vx += sin(this.theta) * 0.5;
     this.vy += cos(this.theta) * 0.5;
-    this.radius *= 0.995;
+    this.radius *= 0.998;
     this.alive = this.radius > 0.7;
   },
   draw: function (ctx) {
@@ -33,7 +33,7 @@ Particle.prototype = {
   }
 };
 var MAX_PARTICLES = 700;
-var COLOURS = ['white', 'lightblue'];
+var COLOURS = ['white', '#81ceff'];
 var particles = [];
 var pool = [];
 
@@ -46,14 +46,14 @@ var demo = Sketch.create({
   retina: 'auto',
   fullscreen: false,
   width: width,
-  height: height+34
+  height: height
 });
 demo.spawn = function (x, y) {
   var particle, theta, force;
   if (particles.length >= MAX_PARTICLES)
     pool.push(particles.shift());
   particle = pool.length ? pool.pop() : new Particle();
-  particle.init(x, y, 4);
+  particle.init(x, y, 2);
   particle.wander = random(0.5, 2.0);
   particle.color = random(COLOURS);
   particle.drag = random(0.1, 0.6);
@@ -80,7 +80,7 @@ demo.draw = function () {
 demo.mousemove = function () {
   var particle, theta, force, touch, max, i, j, n;
   for (i = 0, n = demo.touches.length; i < n; i++) {
-    touch = demo.touches[i], max = random(2, 3);
+    touch = demo.touches[i], max = random(2);
     for (j = 0; j < max; j++) {
       demo.spawn(touch.x, touch.y);
     }
